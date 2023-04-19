@@ -6,7 +6,7 @@ from openpyxl import load_workbook
 from cohost.models.block import AttachmentBlock, MarkdownBlock
 from cohost.models.user import User
 
-os.environ['COHOST_COOKIE'] = 's%3AuHC23-G7PjXau5W1eJh9cfV4amhFk7Nx.U9HjU%2B6y67t%2FX%2FmoiYKg03xE1veWg5iBU1slgMHbWGk'
+os.environ['COHOST_COOKIE'] = 'My Cookie'
 
 t = time.localtime()
 current_time = time.strftime("%H:%M:%S", t)
@@ -82,7 +82,7 @@ tamrielRebuiltNull = pd.isnull(npcs.loc[characterIndex, 'Tamriel Rebuilt'])
 # Function to add CSS stuff:
 # Braces (in order) represent header name, UESP URL, link name, and description bios
 def startTextBox(name, link, bio1, bio2):
-    # TR CSS format variant
+    # Tamriel Rebuilt CSS format variant
     if tamrielRebuiltNull == False:
         return """<div id="outer-border" style="width: 100%; margin: 1% auto; border: 6px double rgb(200, 187, 166); background-color: rgba(0, 0, 0, 0.9);">
         <div id="nameplate-bg" style="background: url(&quot;https://staging.cohostcdn.org/attachment/ef4a6606-bade-4496-8e1b-a0e1cac80ce7/trans-noise.png&quot;), url(&quot;https://staging.cohostcdn.org/attachment/b9b38de1-431f-4104-a9e5-3eb118405bd2/trans-noise02.png&quot;), url(&quot;https://staging.cohostcdn.org/attachment/e794a2d8-db71-404e-ae75-9098565f17cc/gradient-5D4F23.svg&quot;);">
