@@ -12,4 +12,4 @@ mwnpcs-github.py
 
 Morrowind_NPCs.xlsx
 
-  Microsoft Excel file (I'm sorry) I use to pull NPC info and includes 
+  Microsoft Excel file (I'm sorry) I use to pull NPC info, includes local path to screenshot
